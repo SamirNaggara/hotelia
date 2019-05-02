@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials">
+    <!--description de la page-->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <!--Mot clef de la page-->
+    <meta name="author" content="Samir Naggara et Stephan Le Lay">
+    <!--Auteur du site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales</title>
+    <link rel="icon" href="" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li id="sous_menu"><a href="chambre.html">Chambres</a>
+                        <ul id='room'>
+                            <li><a href="chambre.html#chambreClassique">Classique</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreConfort">Confort</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreDeLuxe">Deluxe</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreSuite">Suite</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="spa.html">Le SPA</a></li>
+                    <li><a href="#" class="boutonMenuReservation">Reservation</a></li>
+                    <br>
+                    <hr class="seperationMenu">
+                    <br>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="avis.html">Avis</a></li>
+                    <li id="sousMenuHotel"><a href="#">Hotel</a>
+                        <ul id='Hotel'>
+                            <li><a href="quiSommesNous.html">Qui sommes-nous ?</a></li>
+                            <hr>
+                            <li><a href="acces.html">Accés</a></li>
+                            <hr>
+                            <li><a href="contact.html">Contact</a></li>
+                            <hr>
+                            <li><a href="recrutement.html">Recrutement</a></li>
+                            <hr>
+                            <li><a href="evenement.html">Evenement</a></li>
+                            <hr>
+                            <li><a href="presse.html">Presse</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="actualite.html">Actualité</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <div class="topHeader">
+
+
+            <div class="topHeaderLeft"></div>
+
+
+            <div class="topHeaderMiddle">
+                <a href="index.html"><span class="etoile">*****</span></a>
+                <a href="index.html">
+                    <h1>HOTELIA</h1>
+                </a>
+                <a href="index.html"><span class="etoile">*****</span></a>
+            </div>
+
+
+            <div class="topHeaderRight">
+
+                <a class="boutonPanier" href="panier.html"><i class="fas fa-shopping-cart fa-1x"></i></a>
+
+                <div class="boutonReservation">
+                    <a href="#"><i class="far fa-calendar-alt fa-2x"></i><span> Reservation</span></a>
+                </div>
+
+                <div class="boutonRecherche">
+                    <input type="text" name="" placeholder=" Votre recherche">
+                    <i class="fas fa-search fa-1x"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <aside class="pageReservationRapide">
+        <div class="fondSombre"></div>
+        <div class="reservationPage reservation">
+            <div class="conteneur">
+                <div class="logo">
+
+                    <a href="#"><span class="etoile">*****</span></a>
+                    <a href="#">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="#"><span class="etoile">*****</span></a>
+                </div>
+                <form method="post" action="panier.html">
+                    <label for="nbChambre">J'aimerais reserver</label><br>
+                    <select id="nbChambre">
+                        <option name="nbChambre" value="1chambre" selected="selected">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="2chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="3 chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="4chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="5chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                    </select>
+                    <br>
+                    <div class="date">
+                        <label for="dateArrivee">Du <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateArrivee" name="dateArrivee">
+                    </div>
+
+                    <br>
+                    <div class="date">
+                        <label for="dateDepart">Au <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateDepart" name="dateDepart">
+                    </div>
+                    <input type="submit" value="Voir les tarifs">
+                </form>
+            </div>
+        </div>
+    </aside>
+    <div class="drapeauFrancais">
+        <figure>
+            <img src="images/frenchFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+    <div class="drapeauAnglais">
+        <figure>
+            <img src="images/englishFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+
+    <main class="mainCgv">
+        <h1>Condition Générales de Ventes</h1>
+
+        <h2>0. Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis at numquam odit libero recusandae fugiat, eveniet pariatur eos reiciendis aliquam facere? Fuga, amet, expedita iste quos quis reprehenderit unde voluptatum. Ratione, nostrum modi, accusamus soluta in assumenda eius alias tempore!</p>
+
+        <h2>1. Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis esse asperiores repellendus quae voluptatibus sit praesentium, impedit quidem cupiditate quos enim facere minus tempore veniam qui soluta eligendi non aliquam suscipit, delectus itaque vero. Repellat, ipsa. Incidunt sapiente sequi sit assumenda repellat voluptatum maiores, est vero? Repudiandae, at voluptates repellat quam libero. Ea, sequi quidem? Ducimus possimus, maiores, labore itaque, fugit obcaecati temporibus libero facere eius error illum laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veniam, ipsa consequatur ipsam id unde esse commodi numquam. Ratione, placeat.<br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, explicabo consequatur reiciendis laboriosam nihil. Mollitia repellat totam sit provident enim tenetur, incidunt impedit. Saepe ratione est, cupiditate quis, nemo eius.<br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis atque dolor accusantium, repellat fugiat reprehenderit voluptatum iste officia obcaecati!<br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo alias dignissimos quis reiciendis cumque adipisci necessitatibus, eveniet nisi sunt?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus est vero, laudantium qui nihil. Temporibus ipsa sapiente asperiores sed quae.</p>
+
+
+        <h2>2. Lorem ipsum dolor sit.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, autem nesciunt tempore odit saepe eum, veritatis inventore beatae earum sunt, provident asperiores magnam alias veniam, minus architecto impedit nam totam rem reiciendis odio libero quam nemo! Excepturi vitae maxime minima.</p>
+
+        <h2>3. Lorem ipsum dolor sit amet.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis tempora, illum deserunt tempore esse distinctio obcaecati numquam, voluptas, totam porro sunt excepturi, ea dolorem vel! Expedita quaerat quo, neque nihil quam dicta similique, sit ut mollitia tempore. Est, consectetur.</p>
+
+        <h2>4. Lorem ipsum dolor.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est accusantium aperiam aliquid nam porro. Fugiat aspernatur est in animi deserunt aperiam ratione culpa quis.<br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, numquam. Ullam expedita quaerat architecto officia assumenda harum eaque repellat, at! Fugit, amet, minima doloremque soluta voluptates molestias unde dicta consectetur quibusdam ipsum, aspernatur esse, a ut sapiente quae tenetur! Unde.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat pariatur incidunt quisquam illo dolore saepe voluptas odio culpa, sequi ex, odit architecto, officiis doloribus? Debitis ipsam dolor aliquid nemo praesentium.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo, sit, alias placeat quibusdam possimus excepturi facere velit incidunt praesentium quo repellendus minus perferendis autem tempora numquam vero, doloribus! Asperiores officia, consequuntur quo consectetur. Laboriosam.</p>
+
+        <h2>5. Lorem ipsum dolor sit amet, consectetur.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum temporibus distinctio provident nesciunt quam vel, ullam, quasi qui quia enim molestias rem explicabo tenetur eum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, maiores, nobis. Consequatur eum harum voluptatem ducimus nisi, eligendi maiores voluptate ratione ad veniam, at hic quas consequuntur expedita ipsum enim voluptatum possimus in! Placeat, incidunt!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ut, repudiandae! Quasi ut expedita molestias!</p>
+
+        <h2>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis corrupti cupiditate quasi placeat, possimus recusandae magnam. Perspiciatis quis, saepe non commodi, illum laborum asperiores, rem, dolore eaque ipsam dolorum.<br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores repellendus, minima libero ullam accusantium!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae qui minima voluptatibus, voluptates accusantium veniam fugiat molestias. Fugit ullam sequi alias dolorum nulla, ratione maxime hic eaque odio dolores fugiat!</p>
+
+        <h2>7. Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maxime sunt architecto distinctio vel, sit nostrum voluptate cumque laudantium dolores, dicta voluptatem dolorem, facere illo neque, quidem deleniti quaerat rem.</p>
+
+    </main>
+
+    <footer>
+        <div class="mainFooter">
+
+            <div class="footerLeft">
+                <h2><i class="fas fa-map-marker-alt fa-1x"></i>&nbsp;&nbsp;Nous contacter</h2>
+                <br>
+                <a href="#"></a>
+                <p>Adresse : 1 avenue Montaigne, 75008 Paris</p>
+                <br>
+                <p><i class="fas fa-phone"></i>&nbsp;01 00 00 00 00</p>
+                <br>
+                <p><i class="far fa-envelope"></i>&nbsp;&nbsp;hotelia@gmail.com</p>
+            </div>
+
+            <div class="footerMiddle">
+
+                <div class="topFooterMiddle">
+                    <a href="index.html"><span class="etoile">*****</span></a>
+                    <a href="index.html">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="index.html"><span class="etoile">*****</span></a>
+
+                </div>
+
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x" style="color:white; text-decoration: none;"></i></a>
+                    <a href="https://twitter.com/login"><i class="fab fa-twitter-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://plus.google.com/about?hl=fr"><i class="fab fa-google-plus-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.tumblr.com/"><i class="fab fa-tumblr-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+
+                </div>
+            </div>
+
+
+            <div class="footerRight">
+
+                <div class="blocFooterRight1">
+                    <a href="index.html">Accueil</a>
+                    <a href="chambre.html">Chambre</a>
+                    <a href="restaurant.html">Restaurant</a>
+                    <a href="spa.html">SPA</a>
+                </div>
+
+
+                <div class="blocFooterRight2">
+                    <a href="contact.html">Contactez-nous</a>
+                    <a href="avis.html">Avis clients</a>
+                    <a href="recrutement.html">Nous-recrutons</a>
+                    <form action="post">
+                        <p>Newsletter:</p>
+                        <input type="text" name="newletter">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="basFooter">
+            <p>2019 - <i class="fas fa-copyright"></i>Samir & Stéphane - Hotelia</p>
+            <a href="mentionLegale.html">Mention légales</a>
+            <a href="cgv.html">Chartes de confidentialité</a>
+            <a href="cgv.html">Condition général de vente </a>
+            <a href="planDuSite.html">Plan du site</a>
+            <a href="#" OnClick="window.print()">Imprimer la page</a>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

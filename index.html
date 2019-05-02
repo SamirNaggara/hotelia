@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>HOTELIA</title>
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li id="sous_menu"><a href="chambre.html">Chambres</a>
+                        <ul id='room'>
+                            <li><a href="chambre.html#chambreClassique">Classique</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreConfort">Confort</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreDeLuxe">Deluxe</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreSuite">Suite</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="spa.html">Le SPA</a></li>
+                    <li><a href="#" class="boutonMenuReservation">Reservation</a></li>
+                    <br>
+                    <hr class="seperationMenu">
+                    <br>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="avis.html">Avis</a></li>
+                    <li id="sousMenuHotel"><a href="#">Hotel</a>
+                        <ul id='Hotel'>
+                            <li><a href="quiSommesNous.html">Qui sommes-nous ?</a></li>
+                            <hr>
+                            <li><a href="acces.html">Accés</a></li>
+                            <hr>
+                            <li><a href="contact.html">Contact</a></li>
+                            <hr>
+                            <li><a href="recrutement.html">Recrutement</a></li>
+                            <hr>
+                            <li><a href="evenement.html">Evenement</a></li>
+                            <hr>
+                            <li><a href="presse.html">Presse</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="actualite.html">Actualité</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <div class="topHeader">
+
+
+            <div class="topHeaderLeft"></div>
+
+
+            <div class="topHeaderMiddle">
+                <a href="index.html"><span class="etoile">*****</span></a>
+                <a href="index.html">
+                    <h1>HOTELIA</h1>
+                </a>
+                <a href="index.html"><span class="etoile">*****</span></a>
+            </div>
+
+
+            <div class="topHeaderRight">
+
+                <a class="boutonPanier" href="panier.html"><i class="fas fa-shopping-cart fa-1x"></i></a>
+
+                <div class="boutonReservation">
+                    <a href="#"><i class="far fa-calendar-alt fa-2x"></i><span> Reservation</span></a>
+                </div>
+
+                <div class="boutonRecherche">
+                    <input type="text" name="" placeholder=" Votre recherche">
+                    <i class="fas fa-search fa-1x"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <aside class="pageReservationRapide">
+        <div class="fondSombre"></div>
+        <div class="reservationPage reservation">
+            <div class="conteneur">
+                <div class="logo">
+
+                    <a href="#"><span class="etoile">*****</span></a>
+                    <a href="#">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="#"><span class="etoile">*****</span></a>
+                </div>
+                <form method="post" action="panier.html">
+                    <label for="nbChambre">J'aimerais reserver</label><br>
+                    <select id="nbChambre">
+                        <option name="nbChambre" value="1chambre" selected="selected">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="2chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="3chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="4chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="5chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                    </select>
+                    <br>
+                    <div class="date">
+                        <label for="dateArrivee">Du <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateArrivee" name="dateArrivee">
+                    </div>
+
+                    <br>
+                    <div class="date">
+                        <label for="dateDepart">Au <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateDepart" name="dateDepart">
+                    </div>
+                    <input type="submit" value="Voir les tarifs">
+                </form>
+            </div>
+        </div>
+    </aside>
+    <div class="drapeauFrancais">
+        <figure>
+            <img src="images/frenchFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+    <div class="drapeauAnglais">
+        <figure>
+            <img src="images/englishFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title=""><i class="fas fa-arrow-up"></i></button>
+
+
+
+    <main class="mainIndex">
+        <header>
+            <div class="photoFond"></div>
+            <div class="reservation">
+                <div class="conteneur">
+                    <div class="logo">
+
+                        <a href="#"><span class="etoile">*****</span></a>
+                        <a href="#">
+                            <h2>HOTELIA</h2>
+                        </a>
+                        <a href="#"><span class="etoile">*****</span></a>
+                    </div>
+                    <form method="post" action="">
+                        <label for="nbChambre">J'aimerais reserver</label><br>
+                        <select id="nbChambre">
+                            <option name="nbChambre" value="1chambre" selected="selected">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                            <option name="nbChambre" value="2chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                            <option name="nbChambre" value="3 chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                            <option name="nbChambre" value="4chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                            <option name="nbChambre" value="5chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5 chambres &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        </select>
+                        <br>
+                        <div class="date">
+                            <label for="dateArrivee">Du <i class="far fa-calendar-alt"></i></label>
+                            <input type="date" id="dateArrivee" name="dateArrivee">
+                        </div>
+
+                        <br>
+                        <div class="date">
+                            <label for="dateDepart">Au <i class="far fa-calendar-alt"></i></label>
+                            <input type="date" id="dateDepart" name="dateDepart">
+                        </div>
+                        <input type="submit" value="Voir les tarifs">
+                    </form>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <div class="containerSlideshowArticles">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="mySlides fade">
+                    <img src="images/pageAcceuil/img1Accueil.jpg" alt="images de Hotelia" title="Hotelia" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/pageAcceuil/img2Accueil.jpg" alt="images de Hotelia" title="Hotelia" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/pageAcceuil/img3Accueil.jpg" alt="images de Hotelia" title="Hotelia" style="width:100%">
+                </div>
+
+
+                <div class="mySlides fade">
+                    <img src="images/pageAcceuil/img4Accueil.jpg" alt="images de Hotelia" title="Hotelia" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/pageAcceuil/img5Accueil.jpg" alt="images de Hotelia" title="Hotelia" style="width:100%">
+                </div>
+
+                <br>
+
+            </div>
+
+            <div class="txtSliderAccueil">
+                <section class="texte">
+                    <h3>Bienvenue dans notre hotel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        . Quia maxime ipsa suscipit, voluptatum explicabo consectetur,
+                        esse quis deserunt modi tempore deleniti sequi
+                        praesentium unde ea, nisi a fuga perferendis
+                        . Ipsum mollitia ipsa quisquam officia. Repudiandae,
+                        atque hic quisquam earum doloresLorem ipsum dolor sit amet, consectetur adipisicing elit
+                        . Quia maxime ipsa suscipit, voluptatum explicabo consectetur,
+                        esse quis deserunt modi tempore deleniti sequi
+                        praesentium unde ea, nisi a fuga perferendis
+                      </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="parallaxAccueil"></div>
+
+
+        <div class="containerChambreAccueil">
+            <div class="txtContainerChambre">
+                <h3>Nos chambres</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    . Quia maxime ipsa suscipit, voluptatum explicabo consectetur,
+                    esse quis deserunt modi tempore deleniti sequi
+                    praesentium unde ea, nisi a fuga perferendis
+                    . Ipsum mollitia ipsa quisquam officia. Repudiandae,
+                    atque hic quisquam earum doloresLorem ipsum dolor sit amet, consectetur adipisicing elit
+                    . Quia maxime ipsa suscipit, voluptatum explicabo consectetur,
+                    esse quis deserunt modi tempore deleniti sequi
+                    praesentium unde ea, nisi a fuga perferendis
+                    </p>
+            </div>
+
+            <div class="photoContainerChambre">
+
+            </div>
+        </div>
+
+        <h3 class="animated bounceInLeft onscroll()">Offre Special</h3>
+        <div class="offreSpecial">
+
+            <div class="imgOffreSpecial">
+
+
+
+            </div>
+
+            <div class="txtOffreSpecial">
+                <h3>Salon du chocolat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    . Quia maxime ipsa suscipit, voluptatum explicabo consectetur,
+                    esse quis deserunt modi tempore deleniti sequi
+                    praesentium unde ea, nisi a fuga perferendis
+                    . Ipsum mollitia ipsa quisquam officia. Repudiandae,
+                    atque hic quisquam earum doloresLorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </p>
+                <button type="button">En savoir plus</button>
+            </div>
+
+        </div>
+        <br><br>
+
+        <h3 class="titreEmplacement">Un emplacement idéal</h3>
+
+        <div class="Emplacement">
+
+
+            <div class="imgEmplacementParallax">
+
+            </div>
+
+            <div class="txtEmplacement">
+                <p>Quartier : 8e arrondissement de Paris
+                    Quartier chic avec avenue des Champs-Élysées,
+                    musée d'art du Grand Palais et boutiques haut de gamme.
+                    Cet hôtel élégant et légendaire se trouve à 5 minutes à
+                    pied de la station de métro Alma-Marceau et à 7 minutes
+                    de l'avenue des Champs-Élysées.
+                    Sur la célèbre avenue de la Haute Couture, où plus d’un siècle de créateurs
+                    et d’artistes ont poursuivi l’audace et la passion, un hôtel mythique
+                    attend votre arrivée. Ici tout n’est que luxe, volupté et féerie.
+                    C’est Paris, c’est l’Avenue, c’est Dior et Marlène Dietrich. C’est ici
+                    que, depuis 1913, les icônes et les tendances naissent et que les histoires
+                    d’amour fleurissent. Vous aussi, entrez dans l’histoire
+                    d’un Palace à l’héritage singulier et écrivez avec nous les prochains
+                    chapitres de notre histoire
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="mainFooter">
+
+            <div class="footerLeft">
+                <h2><i class="fas fa-map-marker-alt fa-1x"></i>&nbsp;&nbsp;Nous contacter</h2>
+                <br>
+                <a href="#"></a>
+                <p>Adresse : 1 avenue Montaigne, 75008 Paris</p>
+                <br>
+                <p><i class="fas fa-phone"></i>&nbsp;01 00 00 00 00</p>
+                <br>
+                <p><i class="far fa-envelope"></i>&nbsp;&nbsp;hotelia@gmail.com</p>
+            </div>
+
+            <div class="footerMiddle">
+
+                <div class="topFooterMiddle">
+                    <a href="index.html"><span class="etoile">*****</span></a>
+                    <a href="index.html">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="index.html"><span class="etoile">*****</span></a>
+
+                </div>
+
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x" style="color:white; text-decoration: none;"></i></a>
+                    <a href="https://twitter.com/login"><i class="fab fa-twitter-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://plus.google.com/about?hl=fr"><i class="fab fa-google-plus-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.tumblr.com/"><i class="fab fa-tumblr-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+
+                </div>
+            </div>
+
+
+            <div class="footerRight">
+
+                <div class="blocFooterRight1">
+                    <a href="index.html">Accueil</a>
+                    <a href="chambre.html">Chambre</a>
+                    <a href="restaurant.html">Restaurant</a>
+                    <a href="spa.html">SPA</a>
+                </div>
+
+
+                <div class="blocFooterRight2">
+                    <a href="contact.html">Contactez-nous</a>
+                    <a href="avis.html">Avis clients</a>
+                    <a href="recrutement.html">Nous-recrutons</a>
+                    <form action="post">
+                        <p>Newsletter:</p>
+                        <input type="text" name="newletter">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="basFooter">
+            <p>2019 - <i class="fas fa-copyright"></i>Samir & Stéphane - Hotelia</p>
+            <a href="mentionLegale.html">Mention légales</a>
+            <a href="cgv.html">Chartes de confidentialité</a>
+            <a href="cgv.html">Condition général de vente </a>
+            <a href="planDuSite.html">Plan du site</a>
+            <a href="#" onclick="window.print()">Imprimer la page</a>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scriptAcceuil.js"></script>
+</body>
+
+</html>

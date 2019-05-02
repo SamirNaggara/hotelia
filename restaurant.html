@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Restaurant</title>
+</head>
+
+<body>
+
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li id="sous_menu"><a href="chambre.html">Chambres</a>
+                        <ul id='room'>
+                            <li><a href="chambre.html#chambreClassique">Classique</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreConfort">Confort</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreDeLuxe">Deluxe</a></li>
+                            <hr>
+                            <li><a href="chambre.html#chambreSuite">Suite</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="spa.html">Le SPA</a></li>
+                    <li><a href="#" class="boutonMenuReservation">Reservation</a></li>
+                    <br>
+                    <hr class="seperationMenu">
+                    <br>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="avis.html">Avis</a></li>
+                    <li id="sousMenuHotel"><a href="#">Hotel</a>
+                        <ul id='Hotel'>
+                            <li><a href="quiSommesNous.html">Qui sommes-nous ?</a></li>
+                            <hr>
+                            <li><a href="acces.html">Accés</a></li>
+                            <hr>
+                            <li><a href="contact.html">Contact</a></li>
+                            <hr>
+                            <li><a href="recrutement.html">Recrutement</a></li>
+                            <hr>
+                            <li><a href="evenement.html">Evenement</a></li>
+                            <hr>
+                            <li><a href="presse.html">Presse</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="actualite.html">Actualité</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <div class="topHeader">
+
+
+            <div class="topHeaderLeft"></div>
+
+
+            <div class="topHeaderMiddle">
+                <a href="index.html"><span class="etoile">*****</span></a>
+                <a href="index.html">
+                    <h1>HOTELIA</h1>
+                </a>
+                <a href="index.html"><span class="etoile">*****</span></a>
+            </div>
+
+
+            <div class="topHeaderRight">
+
+                <a class="boutonPanier" href="panier.html"><i class="fas fa-shopping-cart fa-1x"></i></a>
+
+                <div class="boutonReservation">
+                    <a href="#"><i class="far fa-calendar-alt fa-2x"></i><span> Reservation</span></a>
+                </div>
+
+                <div class="boutonRecherche">
+                    <input type="text" name="" placeholder=" Votre recherche">
+                    <i class="fas fa-search fa-1x"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <aside class="pageReservationRapide">
+        <div class="fondSombre"></div>
+        <div class="reservationPage reservation">
+            <div class="conteneur">
+                <div class="logo">
+
+                    <a href="#"><span class="etoile">*****</span></a>
+                    <a href="#">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="#"><span class="etoile">*****</span></a>
+                </div>
+                <form method="post" action="panier.html">
+                    <label for="nbChambre">J'aimerais reserver</label><br>
+                    <select id="nbChambre">
+                        <option name="nbChambre" value="1chambre" selected="selected">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="2chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="3 chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="4chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 4 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                        <option name="nbChambre" value="5chambres">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5 chambre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp▼</option>
+                    </select>
+                    <br>
+                    <div class="date">
+                        <label for="dateArrivee">Du <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateArrivee" name="dateArrivee">
+                    </div>
+
+                    <br>
+                    <div class="date">
+                        <label for="dateDepart">Au <i class="far fa-calendar-alt"></i></label>
+                        <input type="date" id="dateDepart" name="dateDepart">
+                    </div>
+                    <input type="submit" value="Voir les tarifs">
+                </form>
+            </div>
+        </div>
+    </aside>
+    <div class="drapeauFrancais">
+        <figure>
+            <img src="images/frenchFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+    <div class="drapeauAnglais">
+        <figure>
+            <img src="images/englishFlag.png" alt="Drapeau Français" title="Passez le site en Français">
+        </figure>
+    </div>
+
+
+    <button onclick="topFunction()" id="myBtn" title=""><i class="fas fa-arrow-up"></i></button>
+
+    <main class="mainRestaurant">
+        <h1 class='bounceInLeft'>Notre Restaurant</h1>
+        <div class="navigation">
+            <nav>
+                <div class="navResto">
+                    <li><a href="braserie">Brasserie</a></li>
+                    <li><a href="degustation">Dégustation</a></li>
+                    <li><a href="Restaurant">Restaurant</a></li>
+                </div>
+            </nav>
+            <div class="txtHeader">
+                <p>L’excellence culinaire fait depuis longtemps partie intégrante de
+                    l’expérience Mandarin Oriental. Nous proposons une gamme de
+                    destinations gastronomiques variées, de la restauration
+                    gastronomique à la cuisine de bistro. Avec 16 étoiles au guide
+                    Michelin attribuées à 11 de nos restaurants, nous ne sommes pas
+                    les seuls à penser que nos restaurants figurent parmi les meilleurs
+                    au monde.</p>
+            </div>
+        </div>
+
+        <!-- Slider --->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img3.jpg" style="width:100%">
+            </div>
+
+
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/pageRestaurant/img5.jpg" style="width:100%">
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <br>
+        </div>
+        <!-- The dots/circles -->
+
+        <!---END SLIDER----------------->
+        <div class="parallax"></div>
+        <!--- Présentation cuisine ----->
+
+        <h2 class="titreCuisine">La Cuisine</h2>
+        <div class="Cuisine">
+            <img src="images/pageRestaurant/cuisine.jpg" alt="Image cuisine Hotelia" title="Cuisine Hotelia">
+            <div class="txtCuisine">
+                <h3>La cuisine c'est nous et schmidt</h3>
+                <br><br>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                    et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                    standard de l'imprimerie depuis les années 1500, quand un imprimeur
+                    anonyme assembla ensemble des morceaux de texte pour réaliser
+                    un livre spécimen de polices de texte. Il n'a pas fait que survivre
+                    cinq siècles, mais s'est aussi adapté à la bureautique
+                    informatique, sans que son contenu n'en soit modifié. Il a été
+                    popularisé dans les années 1960 grâce à la vente de feuilles
+                    Letraset contenant des passages du Lorem Ipsum, et, plus
+                    récemment, par son inclusion dans des applications de mise en
+                    page de texte, comme Aldus PageMaker.
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                    et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                    standard de .</p>
+            </div>
+        </div>
+        <!-- Fin pres Cuisine -->
+
+        <!-- carte brasserie / Dégustation / restaurant -->
+
+        <div class="containerCarteResto">
+
+            <h2>Les menus</h2>
+
+            <!--Debut container Brasserie (midi)-->
+            <div class="containerBrasserie">
+                <div class="Menu_midi">
+                    <h4>Menu Midi</h4>
+                    <h5>Entrées :</h5>
+                    <p>-&nbsp;Tartare au saint jacques avec sa couverture de caviar</p>
+                    <p>-&nbsp;Huitres pochées au guacamole citronelle et son sorbet pomme vodka citron</p>
+                    <p>-&nbsp;Foie gras d'oie cuit en terrine</p>
+                    <h5>Plats :</h5>
+                    <p>-&nbsp;Homard à la rhubarbe</p>
+                    <p>-&nbsp;Burger de Gambas</p>
+                    <p>-&nbsp;Côtes d'agneau et caviar d'aubergines fumées </p>
+                    <h5>Desserts :</h5>
+                    <p>-&nbsp;MilleFeuille à la vanille et au praliné</p>
+                    <p>-&nbsp;Paris Brest à la pistache</p>
+                    <p>-&nbsp;Café Liégois</p>
+                </div>
+            </div>
+            <!--fin container brasserie -->
+
+            <!--Debut container degustation(Aprés midi)-->
+            <div class="containerDégustation">
+                <div class="menuDegustation">
+                    <h4>Dégustation Aprés-midi</h4>
+                    <p>-&nbsp;Vacherin glacé Mangue Passion, meringue, chantilly</p>
+                    <p>-&nbsp;Coulant au Chocolat, Magnum Chocolat lait / vanille</p>
+                    <p>-&nbsp;Profiteroles revisités : caramel exotique</p>
+                    <p>-&nbsp;Pancake au sirp d'érable accompagnée de ces fruits</p>
+                    <p>-&nbsp;Panna Cotta / coulis fruits rouges / Caramel</p>
+                    <p>-&nbsp;Chouquettes</p>
+                    <p>-&nbsp;Créme catalane</p>
+                    <p>-&nbsp;Forêt noire</p>
+                </div>
+            </div>
+            <!--fin container degustation -->
+
+
+
+            <!--Début container resto (Soir)-->
+            <div class="containerRestaurantSoir">
+                <h4>Menu Soir</h4>
+                <h5>Entrées :</h5>
+                <p>-&nbsp;Tartare au saint jacques avec sa couverture de caviar</p>
+                <p>-&nbsp;Huitres pochées au guacamole citronelle et son sorbet pomme vodka citron</p>
+                <p>-&nbsp;Foie gras d'oie cuit en terrine</p>
+                <h5>Plats :</h5>
+                <p>-&nbsp;Homard à la rhubarbe</p>
+                <p>-&nbsp;Burger de Gambas</p>
+                <p>-&nbsp;Côtes d'agneau et caviar d'aubergines fumées </p>
+                <h5>Desserts :</h5>
+                <p>-&nbsp;MilleFeuille à la vanille et au praliné</p>
+                <p>-&nbsp;Paris Brest à la pistache</p>
+                <p>-&nbsp;Café Liégois</p>
+            </div>
+        </div>
+
+        <!--fin container resto soir-->
+
+        <!-- fin carte brasserie -->
+
+        <!-- Carte Vin et Biére -->
+        <div class="containerTxt">
+            <div class="txtSliderVin">
+                <div class="titreCarte">
+                    <h2>Carte des vins et bières</h2>
+                </div>
+                <h3>Alsaciens</h3>
+                <p>-&nbspAlsace Muscat&nbsp&nbs</p>
+                <p>-&nbspAlsace Pinot noir</p>
+                <p>-&nbspAlsace Grand cru</p>
+                <p>-&nbspCrement d'alsace</p>
+                <br>
+                <h3>Beaujolais</h3>
+                <p>-&nbspBeaujolais</p>
+                <p>-&nbspchenas</p>
+                <p>-&nbspMoulin a vent</p>
+                <p>-&nbspRegnie</p>
+                <br>
+                <h3>Bordeaux</h3>
+                <p>-&nbspSauternes</p>
+                <p>-&nbspMontagne Saint Emilion</p>
+                <p>-&nbspHaut Medoc</p>
+                <p>-&nbspCotes de bourg</p>
+                <br>
+                <h3>Cote du Rhone</h3>
+                <p>-&nbspChateauneuf du pape</p>
+                <p>-&nbspSaint joseph</p>
+                <p>-&nbspMuscat de beaume de venise</p>
+                <p>-&nbspCotes du luberon</p>
+            </div>
+
+            <div class="txtSliderBieres">
+                <h3>Nos Bières</h3>
+                <p>-&nbspKarmeliet triple</p>
+                <p>-&nbspOrval</p>
+                <p>-&nbspDuvel</p>
+                <p>-&nbspKastel</p>
+                <p>-&nbspWelscotch</p>
+                <p>-&nbspKwak</p>
+                <p>-&nbspKriska</p>
+                <p>-&nbspREGNIE</p>
+                <p>-&nbspChimay blue</p>
+                <p>-&nbspDorelei</p>
+                <p>-&nbspKorona</p>
+                <p>-&nbspSkoll</p>
+            </div>
+        </div>
+
+    </main>
+    <!-- fin carte -->
+
+
+    <footer>
+        <div class="mainFooter">
+
+            <div class="footerLeft">
+                <h2><i class="fas fa-map-marker-alt fa-1x"></i>&nbsp;&nbsp;Nous contacter</h2>
+                <br>
+                <a href="#"></a>
+                <p>Adresse : 1 avenue Montaigne, 75008 Paris</p>
+                <br>
+                <p><i class="fas fa-phone"></i>&nbsp01 00 00 00 00</p>
+                <br>
+                <p><i class="far fa-envelope"></i>&nbsp&nbsphotelia@gmail.com</p>
+            </div>
+
+            <div class="footerMiddle">
+
+                <div class="topFooterMiddle">
+                    <a href="index.html"><span class="etoile">*****</span></a>
+                    <a href="index.html">
+                        <h2>HOTELIA</h2>
+                    </a>
+                    <a href="index.html"><span class="etoile">*****</span></a>
+
+                </div>
+
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x" style="color:white; text-decoration: none;"></i></a>
+                    <a href="https://twitter.com/login"><i class="fab fa-twitter-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://plus.google.com/about?hl=fr"><i class="fab fa-google-plus-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-2x" style="color:white;text-decoration: none;"></i></a>
+                    <a href="https://www.tumblr.com/"><i class="fab fa-tumblr-square fa-2x" style="color:white;text-decoration: none;"></i></a>
+
+                </div>
+            </div>
+
+
+            <div class="footerRight">
+
+                <div class="blocFooterRight1">
+                    <a href="index.html">Accueil</a>
+                    <a href="chambre.html">Chambre</a>
+                    <a href="restaurant.html">Restaurant</a>
+                    <a href="spa.html">SPA</a>
+                </div>
+
+
+                <div class="blocFooterRight2">
+                    <a href="contact.html">Contactez-nous</a>
+                    <a href="avis.html">Avis clients</a>
+                    <a href="recrutement.html">Nous-recrutons</a>
+                    <form action="post">
+                        <p>Newsletter:</p>
+                        <input type="text" name="newletter">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="basFooter">
+            <p>2019 - <i class="fas fa-copyright"></i>Samir & Stéphane - Hotelia</p>
+            <a href="mentionLegale.html">Mention légales</a>
+            <a href="cgv.html">Chartes de confidentialité</a>
+            <a href="cgv.html">Condition général de vente </a>
+            <a href="planDuSite.html">Plan du site</a>
+            <a href="#" OnClick="window.print()">Imprimer la page</a>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

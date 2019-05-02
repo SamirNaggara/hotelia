@@ -1,0 +1,2358 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  transition: color 0.3s ease; }
+
+/*-------------------------------Generale----------------------------------*/
+/*
+//@media screen and (max-width: 480px)
+//@media screen and (max-width: 640px)
+//@media screen and (max-width: 800px)
+//@media screen and (max-width: 1024px)
+//@media screen and (max-width: 1600px)
+    
+*/
+* {
+  box-sizing: border-box;
+  transition: 0.3s; }
+
+a {
+  text-decoration: none;
+  color: #232323;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  transition: color 0.3s ease;
+  color: #cdcdcd; }
+
+/*----------------------------------------------------------------*/
+/*----------------------------HEADER----------------------------*/
+/*----------------------------------------------------------------*/
+header {
+  /*HEADER AU MILIEU*/
+  /*HEADER A DROITE*/
+  /*--------------------------MENU BURGER-------------------------------------*/
+    /*
+#menuToggle input:hover{
+    color:white;
+    &:
+}
+*/
+    /*
+* Just a quick hamburger
+*/
+    /*
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+    /*
+* But let's hide the middle one.
+*/
+    /*
+* Ohyeah and the last one should go the other direction
+*/
+    /*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+    /*
+* And let's slide it in from the left
+*/ }
+  header .topHeader {
+    width: 100%;
+    height: 80px;
+    background-color: #312a29;
+    margin-top: -28px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    /*  border:1px solid red;*/ }
+  header .topHeaderLeft {
+    width: 10vw; }
+  header .topHeaderMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: 3s;
+    /*    border:1px solid green;*/ }
+  header .topHeaderMiddle > a > h1,
+  header .topHeaderMiddle > a > span {
+    font-size: 30px;
+    color: white;
+    /*    border:1px solid red;*/
+    display: inline-block;
+    height: 40px;
+    line-height: 40px; }
+  header .topHeaderMiddle > a > span {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+    /*    border:1px solid red;*/ }
+  header .topHeaderMiddle:hover > a > h1,
+  header .topHeaderMiddle:hover > a > span {
+    color: tomato; }
+  @media screen and (max-width: 800px) {
+    header .topHeaderMiddle > a > span {
+      display: none; } }
+  header .topHeaderRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*    border: 1px solid red;*/
+    z-index: 9; }
+  header .topHeaderRight > .boutonPanier {
+    z-index: 10;
+    margin: 0 24px; }
+  header .topHeaderRight > .boutonPanier > i {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #b3b3b3;
+    /*      border:1px solid red;*/ }
+  header .topHeaderRight > .boutonPanier:hover > i {
+    color: white; }
+  header .topHeaderRight > .boutonReservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 24px;
+    /*    border:1px solid red;*/ }
+  header .topHeaderRight > .boutonReservation > a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 4px;
+    background-color: #cb8606;
+    height: 48px;
+    z-index: 11;
+    padding: 2px 0 0 4px;
+    /*    border:1px solid red;*/
+    text-align: center;
+    font-weight: bold; }
+  header .topHeaderRight > .boutonReservation > a > span {
+    color: #b3b3b3; }
+  header .topHeaderRight > .boutonReservation > a:hover > span {
+    color: white; }
+  header .topHeaderRight > .boutonReservation > a > i {
+    position: relative;
+    top: -2px;
+    margin-right: 8px;
+    color: #b3b3b3;
+    transition: 0.3s; }
+  header .topHeaderRight > .boutonReservation > a:hover > i {
+    color: white; }
+  header .topHeaderRight > .boutonRecherche {
+    margin-right: 40px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    /*    border: 2px solid red;*/ }
+  header .topHeaderRight > .boutonRecherche > i {
+    color: #b3b3b3;
+    font-size: 1.5em; }
+  header .topHeaderRight > .boutonRecherche:hover > i {
+    color: white; }
+  header .topHeaderRight > .boutonRecherche > input {
+    position: relative;
+    top: -2px;
+    transition: 2s;
+    margin-right: 8px;
+    width: 0;
+    border: none;
+    /*    border-radius:15px;*/ }
+  @media screen and (max-width: 640px) {
+    header .topHeaderRight > .boutonReservation > a > span {
+      display: none;
+      text-align: center; }
+    header .topHeaderRight > .boutonReservation > a {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0 0 2px; }
+    header .topHeaderRight > .boutonReservation > a > i {
+      top: 0;
+      margin-right: 0; }
+    header .topHeaderRight > .boutonPanier {
+      display: none; } }
+@media screen and (max-width: 640px) and (max-width: 480px) {
+  header .topHeaderRight > .boutonReservation {
+    display: none; } }
+
+  header #menuToggle {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 28px;
+    padding-left: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: nonep; }
+  header #menuToggle input {
+    display: block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: -24px;
+    left: 4px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  header #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #b3b3b3;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  header #menuToggle:hover span {
+    background: white; }
+  header #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  header #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  header #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white; }
+  header #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  header #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  header #menu {
+    /* to stop flickering of text in safari */
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #312a29;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  header #menu li {
+    padding: 14px 0;
+    font-size: 18px; }
+  header #menuToggle input:checked ~ ul {
+    transform: none; }
+  header ul ul > li > a {
+    font-size: 15px; }
+  header #room {
+    display: none;
+    text-align: center;
+    margin-top: 20px; }
+  header #sousMenu > ul {
+    display: none;
+    text-align: center;
+    margin-top: 20px; }
+  header #Hotel {
+    display: none;
+    text-align: center;
+    margin-top: 15px; }
+
+/****************************************************************************************/
+/********************************FOOTER**************************************************/
+/*******************************************************************************************/
+.mainFooter {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #454545;
+  color: white;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  /******************Bloc a l'int├®rieur du footer******************/
+  /*******Gauche*******/
+  /********Media query blocfooterleft***********/
+  /*****************Fin media query bloc gauche********************/
+  /*********ICONE FOOTER MIDDLE RESEAU SOCIAUX**********/
+  /***************FOOTER RIGHT*************/ }
+  .mainFooter .footerLeft {
+    width: 25%;
+    height: 200px;
+    top: 0;
+    padding: 1%;
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px; }
+  .mainFooter .footerLeft p {
+    margin-top: 10px; }
+  .mainFooter .footerMiddle {
+    width: 33%;
+    height: 200px;
+    padding: 1%;
+    margin-top: 20px;
+    flex-direction: column; }
+  .mainFooter .topFooterMiddle > a > h2,
+  .mainFooter .topFooterMiddle > a > span {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    line-height: 100px;
+    font-family: 'Tenor Sans', sans-serif; }
+  .mainFooter .topFooterMiddle > a > span {
+    font-size: 30px;
+    line-height: 100px; }
+  .mainFooter .topFooterMiddle {
+    display: flex;
+    justify-content: center; }
+  .mainFooter .icon {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around; }
+  .mainFooter .icon i {
+    background-color: none; }
+  .mainFooter .fab:hover {
+    /***classe Icon***/
+    opacity: 0.5; }
+  .mainFooter .footerRight {
+    width: 33%;
+    height: 200px;
+    padding: 1%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; }
+  .mainFooter .blocFooterRight1 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    line-height: 30px; }
+  .mainFooter .blocFooterRight2 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    line-height: 30px; }
+    @media screen and (max-width: 800px) {
+      .mainFooter .blocFooterRight2 input {
+        display: block; } }
+  .mainFooter .footerRight a,
+  .mainFooter .footerRight p {
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 13px;
+    font-family: 'Oswald', sans-serif; }
+  .mainFooter .footerRight a:hover {
+    opacity: 0.5; }
+  @media screen and (max-width: 1600px) {
+    .mainFooter .footerRight {
+      width: 20%;
+      padding: 1%; } }
+  @media screen and (max-width: 1300px) {
+    .mainFooter .footerLeft {
+      width: 100% !important;
+      margin: 0 auto; }
+    .mainFooter .footerMiddle {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      margin-top: 0px; }
+    .mainFooter .footerRight {
+      width: 100% !important;
+      margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .mainFooter .footerLeft {
+      width: 100% !important;
+      margin: 0 auto; }
+    .mainFooter .footerMiddle {
+      width: 100% !important;
+      margin: 0 auto; }
+    .mainFooter .footerRight {
+      width: 100% !important;
+      margin: 0 auto;
+      height: auto; } }
+  @media screen and (max-width: 780px) {
+    .mainFooter .footerLeft {
+      width: 100% !important; }
+    .mainFooter .footerMiddle {
+      width: 100% !important; }
+    .mainFooter .footerRight {
+      width: 100% !important;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0px; } }
+
+.basFooter {
+  width: 100%;
+  background-color: #454545;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  padding-top: 32px; }
+  @media screen and (max-width: 800px) {
+    .basFooter {
+      flex-direction: column;
+      text-align: center; }
+      .basFooter a,
+      .basFooter p {
+        margin-bottom: 16px; } }
+
+.basFooter a {
+  text-decoration: none;
+  color: white; }
+
+.basFooter a:hover {
+  opacity: 0.5; }
+
+/* Hide the images by default */
+/* Next & previous buttons */
+/* Position the "next button" to the right */
+/* Caption text */
+/* Number text (1/3 etc) */
+/* The dots/bullets/indicators */
+/* Fading animation */
+.mainIndex header .photoFond {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: no-repeat url(../images/baniere.jpg);
+  background-position: center;
+  background-origin: content-box; }
+
+.reservation {
+  float: right;
+  width: 300px;
+  padding: 10px 10px 0 10px;
+  background-color: rgba(37, 37, 37, 0.9);
+  position: relative;
+  right: 120px;
+  top: -322px; }
+
+@media screen and (max-width: 480px) {
+  .reservation {
+    margin: 0 auto;
+    float: none;
+    background-color: rgba(37, 37, 37, 0.5);
+    right: auto; } }
+.reservation .conteneur {
+  border: 1px solid white;
+  border-bottom: none;
+  width: 280px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+
+.reservation .conteneur .logo {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto; }
+
+.reservation .conteneur .logo a h2,
+.reservation .conteneur .logo a span {
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px; }
+
+.reservation .conteneur .logo a span {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 30px;
+  height: 24px;
+  position: relative;
+  top: 6px; }
+
+.reservation .conteneur form {
+  margin: 0 auto; }
+
+.reservation .conteneur form label {
+  color: goldenrod;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 16px; }
+
+.reservation .conteneur form label i {
+  color: white; }
+
+.reservation .conteneur form select#nbChambre {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  background-color: inherit;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 24px; }
+
+.reservation .conteneur form select#nbChambre option {
+  color: black;
+  border: none;
+  background-color: inherit; }
+
+.reservation .conteneur form .date #dateArrivee,
+.reservation .conteneur form .date #dateDepart {
+  width: 200px;
+  background-color: inherit;
+  text-align: center;
+  color: white;
+  border: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white; }
+
+.reservation .conteneur form .date label {
+  margin-right: 16px;
+  display: inline-block; }
+
+.reservation .conteneur form input[type=submit] {
+  display: block;
+  width: 300px;
+  height: 50px;
+  background-color: #00c9ff;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  top: 60px;
+  left: -21px;
+  margin-top: -24px; }
+
+@media screen and (max-width: 640px) {
+  .reservation .conteneur form input[type=submit] {
+    bottom: 0px; } }
+.diaporama {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+
+.diaporama .photo {
+  position: relative; }
+
+.diaporama .photo img {
+  display: block;
+  width: 600px;
+  height: 644px;
+  margin: 0 auto; }
+
+.diaporama .photo .boutonGauche,
+.diaporama .photo .boutonDroite {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  font-size: 3em;
+  bottom: 16px; }
+
+.diaporama .photo .boutonGauche {
+  right: 80px; }
+
+.diaporama .photo .boutonDroite {
+  right: 16px; }
+
+.diaporama section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.diaporama section h3 {
+  text-align: center;
+  font-size: 2em;
+  flex: 1;
+  padding: 30px; }
+
+.diaporama section p {
+  line-height: 2em;
+  flex: 3; }
+
+@media screen and (max-width: 800px) {
+  .diaporama {
+    flex-direction: column-reverse !important; }
+
+  .diaporama .photo {
+    width: 80%;
+    margin: 40px auto; }
+
+  .diaporama .photo img {
+    width: 100%;
+    height: auto; }
+
+  .diaporama .texte {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px; }
+
+  .diaporama .texte h3,
+  .diaporama .texte p {
+    text-align: justify; } }
+article#diaporamaBienvenue {
+  margin-top: 400px;
+  position: relative;
+  top: -200px; }
+
+article#diaporamaHautStanding {
+  margin-top: 160px;
+  flex-direction: row-reverse; }
+
+.offreSpeciale {
+  background-color: lightpink;
+  margin-top: 160px;
+  padding-bottom: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.offreSpeciale h2 {
+  padding: 16px 0;
+  text-align: center;
+  font-size: 2em;
+  width: 100%; }
+
+.offreSpeciale .diaporama {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  box-sizing: border-box; }
+
+.offreSpeciale .diaporama .photo img {
+  width: 100%;
+  height: auto; }
+
+.offreSpeciale .diaporama .photo .boutonGauche,
+.offreSpeciale .diaporama .photo .boutonDroite {
+  display: none; }
+
+.offreSpeciale .diaporama .texte {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%; }
+
+.offreSpeciale .diaporama .texte h3 {
+  width: 100%;
+  display: block;
+  padding: inherit;
+  padding-top: 16px; }
+
+.offreSpeciale .diaporama .texte h3 span {
+  font-size: .6em;
+  font-style: italic; }
+
+.offreSpeciale .diaporama .texte p {
+  padding: 16px;
+  text-align: center; }
+
+.offreSpeciale .diaporama .texte .prixEtReservation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative; }
+
+.offreSpeciale .diaporama .texte .prixEtReservation span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8px; }
+
+.offreSpeciale .diaporama .texte .prixEtReservation button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #00c9ff;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none; }
+
+@media screen and (max-width: 960px) {
+  .offreSpeciale .diaporama {
+    width: 97%; }
+
+  .offreSpeciale .diaporama .photo {
+    width: 100%; }
+
+  .offreSpeciale .diaporama .texte {
+    width: 100%; } }
+#salonChocolat {
+  margin-top: 120px; }
+
+#diaporamaEmplacementIdeal {
+  margin-top: 120px; }
+
+#diaporamaRestaurantRafine {
+  margin-top: 120px;
+  flex-direction: row-reverse; }
+
+.mainIndex .containerSlideshowArticles {
+  width: 100%;
+  display: flex;
+  margin-top: 200px;
+  position: relative;
+  top: -164px; }
+
+.mainIndex .slideshow-container {
+  position: relative;
+  margin: 0 0px 0px 10px; }
+
+.mainIndex .txtSliderAccueil {
+  width: 45%;
+  height: 180px;
+  padding: 1%;
+  margin-left: 50px;
+  line-height: 30px; }
+
+.mainIndex .mySlides {
+  display: none; }
+
+.mainIndex .prev,
+.mainIndex .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -92px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.mainIndex .next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.mainIndex .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.mainIndex .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.mainIndex .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.mainIndex .active,
+.mainIndex .dot:hover {
+  background-color: #717171; }
+
+.mainIndex .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.3s;
+  animation-name: fade;
+  animation-duration: 0.3s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+.mainIndex .txtSliderAccueil > .text,
+.mainIndex h3 {
+  font-size: 50px;
+  line-height: 100px; }
+
+.mainIndex .parallaxAccueil {
+  background-image: url("../images/pageAcceuil/img3Accueil.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 350px;
+  margin-top: -100px; }
+
+.mainIndex .containerChambreAccueil {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 800px;
+  padding: 2%; }
+
+.mainIndex .photoContainerChambre {
+  width: 49%;
+  background-image: url("../images/pageAcceuil/img5Accueil.jpg");
+  background-size: cover; }
+
+.mainIndex .txtContainerChambre {
+  width: 47%;
+  height: 700px; }
+
+.mainIndex .txtContainerChambre > h3 {
+  text-align: center;
+  margin-top: 120px; }
+
+.mainIndex .txtContainerChambre > p {
+  line-height: 30px;
+  margin-top: 70px; }
+
+.mainIndex .offreSpecial {
+  width: 72%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15%;
+  box-shadow: 0 10px 8px -8px black;
+  margin-top: 5px; }
+
+.mainIndex .imgOffreSpecial {
+  width: 60%;
+  height: 500px;
+  background-image: url("../images/pageAcceuil/imgSalonChoco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.mainIndex .txtOffreSpecial {
+  width: 40%;
+  height: 400px;
+  margin-top: 20px;
+  padding: 1%;
+  position: relative; }
+
+.mainIndex .txtOffreSpecial > h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: -50px; }
+
+.mainIndex .txtOffreSpecial > p {
+  line-height: 27px;
+  text-align: center;
+  padding: 1%; }
+
+.mainIndex .bounceInLeft {
+  transition: 2s;
+  text-align: center; }
+
+.mainIndex .txtOffreSpecial > button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #00c9ff;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.mainIndex .Emplacement {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  padding: 20px; }
+
+.mainIndex .titreEmplacement {
+  text-align: center; }
+
+.mainIndex .imgEmplacementParallax {
+  width: 45%;
+  height: 500px;
+  margin-left: 5%;
+  background-image: url("../images/pageAcceuil/backgroundEmplacement.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.mainIndex .txtEmplacement {
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 8%;
+  text-align: center;
+  line-height: 25px; }
+
+@media screen and (max-width: 1299px) {
+  .mainIndex .containerSlideshowArticles {
+    min-width: 100%; }
+
+  .containerSlideshowArticles {
+    flex-direction: column; }
+
+  .mainIndex .prev,
+  .mainIndex .next {
+    margin-top: -30px; }
+
+  .mainIndex .txtSliderAccueil {
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 5px;
+    text-align: center; }
+
+  .mainIndex .txtContainerChambre {
+    width: 100%;
+    margin-top: -150px; }
+
+  .mainIndex .txtContainerChambre p {
+    margin-top: 10px;
+    text-align: center; }
+
+  .mainIndex .photoContainerChambre {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -400px; }
+
+  .mainIndex .txtOffreSpecial h3 {
+    font-size: 50px; }
+
+  .mainIndex .txtOffreSpecial p {
+    display: none; }
+
+  .mainIndex .Emplacement {
+    flex-direction: column;
+    width: 100%; }
+
+  .mainIndex .Emplacement .imgEmplacementParallax {
+    width: 100%;
+    margin-left: 0px; }
+
+  .mainIndex .titreEmplacement {
+    margin-left: 0px; }
+
+  .mainIndex .txtEmplacement {
+    width: 100%;
+    margin-left: 0px; } }
+@media screen and (max-width: 850px) {
+  .mainIndex .txtSliderAccueil {
+    margin-top: -50px; }
+
+  .mainIndex .txtSliderAccueil h3 {
+    font-size: 25px; }
+
+  .mainIndex .txtSliderAccueil p {
+    margin-top: -30px;
+    font-size: 15px; }
+
+  .mainIndex .txtContainerChambre h3 {
+    font-size: 25px; }
+
+  .mainIndex .txtContainerChambre p {
+    font-size: 15px;
+    margin-top: -30px; }
+
+  .mainIndex .offreSpecial {
+    width: 100%;
+    margin-left: 0px; }
+
+  .mainIndex .bounceInLeft {
+    font-size: 25px; }
+
+  .mainIndex .offreSpecial h3 {
+    font-size: 25px; }
+
+  .mainIndex .titreEmplacement {
+    font-size: 25px; }
+
+  .mainIndex .txtEmplacement p {
+    font-size: 15px; } }
+@media screen and (max-width: 626px) {
+  .mainIndex .txtSliderAccueil h3 {
+    font-size: 20px; }
+
+  .mainIndex .txtSliderAccueil p {
+    margin-top: -30px;
+    font-size: 13px; }
+
+  .mainIndex .txtContainerChambre h3 {
+    font-size: 20px; }
+
+  .mainIndex .txtContainerChambre p {
+    font-size: 13px;
+    margin-top: -30px; }
+
+  .mainIndex .txtOffreSpecial button {
+    width: 150px;
+    font-size: 1em; }
+
+  .mainIndex .animated {
+    font-size: 20px; }
+
+  .mainIndex .offreSpecial h3 {
+    font-size: 20px; }
+
+  .mainIndex .titreEmplacement {
+    font-size: 20px; }
+
+  .mainIndex .txtEmplacement p {
+    font-size: 13px; } }
+.pageReservationRapide .reservationPage {
+  display: none;
+  float: left;
+  position: inherit;
+  position: fixed;
+  top: 35vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  margin: 0;
+  z-index: 150; }
+.pageReservationRapide .fondSombre {
+  display: none;
+  position: absolute;
+  width: 99vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.71);
+  z-index: 100; }
+
+#diaporamaSpa {
+  margin-top: 120px; }
+
+.mainQuiSommesNous #diaporamaLesAmbitions,
+.mainQuiSommesNous #diaporamaLequipe,
+.mainQuiSommesNous #diaporamaLaCreation {
+  justify-content: space-around !important;
+  margin-top: 120px; }
+  .mainQuiSommesNous #diaporamaLesAmbitions .texte,
+  .mainQuiSommesNous #diaporamaLequipe .texte,
+  .mainQuiSommesNous #diaporamaLaCreation .texte {
+    width: 30%;
+    text-align: justify; }
+    @media screen and (max-width: 800px) {
+      .mainQuiSommesNous #diaporamaLesAmbitions .texte,
+      .mainQuiSommesNous #diaporamaLequipe .texte,
+      .mainQuiSommesNous #diaporamaLaCreation .texte {
+        width: 80%; } }
+  .mainQuiSommesNous #diaporamaLesAmbitions .photo,
+  .mainQuiSommesNous #diaporamaLequipe .photo,
+  .mainQuiSommesNous #diaporamaLaCreation .photo {
+    width: 60%; }
+    @media screen and (max-width: 800px) {
+      .mainQuiSommesNous #diaporamaLesAmbitions .photo,
+      .mainQuiSommesNous #diaporamaLequipe .photo,
+      .mainQuiSommesNous #diaporamaLaCreation .photo {
+        width: 80%; } }
+    .mainQuiSommesNous #diaporamaLesAmbitions .photo img,
+    .mainQuiSommesNous #diaporamaLequipe .photo img,
+    .mainQuiSommesNous #diaporamaLaCreation .photo img {
+      width: 100%;
+      height: auto; }
+  @media screen and (max-width: 800px) {
+    .mainQuiSommesNous #diaporamaLesAmbitions,
+    .mainQuiSommesNous #diaporamaLequipe,
+    .mainQuiSommesNous #diaporamaLaCreation {
+      margin-top: 40px; } }
+.mainQuiSommesNous #diaporamaLequipe {
+  flex-direction: row-reverse; }
+
+.mainAcces #carte {
+  margin-top: 120px; }
+  .mainAcces #carte #maCarte {
+    width: 400px;
+    height: 400px; }
+  .mainAcces #carte .texte {
+    width: 45%; }
+    @media screen and (max-width: 800px) {
+      .mainAcces #carte .texte {
+        width: 80%; } }
+    .mainAcces #carte .texte .choix {
+      display: flex; }
+      .mainAcces #carte .texte .choix h2 {
+        width: 25%;
+        height: 40px;
+        line-height: 40px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        border-right: 1px solid black;
+        font-size: 1em; }
+        .mainAcces #carte .texte .choix h2:last-child {
+          border-right: 2px solid black; }
+    .mainAcces #carte .texte p {
+      padding: 24px;
+      text-align: justify; }
+
+.mainChambre {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.chambre {
+  margin-top: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  border: 2px solid black; }
+  .chambre .boutonPlus {
+    width: 10%;
+    height: 200px;
+    background-color: #bcbcbc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .chambre .boutonPlus i {
+      font-size: 2em; }
+  @media screen and (max-width: 800px) {
+    .chambre .boutonPlus {
+      height: 500px; } }
+  .chambre .diaporama {
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap; }
+    .chambre .diaporama .photo {
+      width: 30%;
+      height: 200px;
+      transition: none;
+      overflow: hidden; }
+      .chambre .diaporama .photo img {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        transition: none; }
+    .chambre .diaporama .texte {
+      width: 70%;
+      height: 200px;
+      justify-content: space-between;
+      position: relative; }
+      .chambre .diaporama .texte h3 {
+        display: inline-block;
+        text-align: left;
+        padding: 16px 8px;
+        margin: 0;
+        flex: none; }
+      .chambre .diaporama .texte .proprieteChambre {
+        display: flex;
+        justify-content: flex-start;
+        position: absolute;
+        top: 56px; }
+        .chambre .diaporama .texte .proprieteChambre li {
+          padding: 0 8px; }
+      .chambre .diaporama .texte p {
+        padding: 8px;
+        display: none; }
+      .chambre .diaporama .texte .prixEtReservation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        padding-bottom: 8px; }
+        .chambre .diaporama .texte .prixEtReservation span {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 8px; }
+        .chambre .diaporama .texte .prixEtReservation button {
+          display: block;
+          display: none;
+          width: 200px;
+          height: 50px;
+          background-color: #00c9ff;
+          color: white;
+          font-size: 1.3em;
+          font-weight: bold;
+          border: none;
+          float: left; }
+    .chambre .diaporama .caracteristiques {
+      display: none;
+      width: 30%;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .chambre .diaporama .caracteristiques li {
+        display: inline-block;
+        height: 20%;
+        line-height: 40px;
+        width: 49%;
+        text-align: center; }
+    @media screen and (max-width: 800px) {
+      .chambre .diaporama .photo {
+        width: 100% !important;
+        height: 300px;
+        margin-top: 0;
+        margin-bottom: 0; }
+        .chambre .diaporama .photo img {
+          min-height: 300px; }
+      .chambre .diaporama .texte {
+        font-size: 0.8em;
+        overflow: hidden;
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%; }
+        .chambre .diaporama .texte h3 {
+          font-size: 1.5em; }
+        .chambre .diaporama .texte p {
+          text-align: justify;
+          font-size: 0.9em; }
+        .chambre .diaporama .texte .proprieteChambre {
+          font-size: 0.9em;
+          width: 100%;
+          position: relative;
+          top: -8px; }
+      .chambre .diaporama .caracteristiques {
+        width: 100%; }
+        .chambre .diaporama .caracteristiques ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          .chambre .diaporama .caracteristiques ul li {
+            width: 33%;
+            font-size: 0.9em; } }
+
+.bigBoutonReservation {
+  display: block;
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: #00c9ff;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none;
+  float: none; }
+
+.mainChambre > .texte {
+  margin-top: 96px;
+  width: 100%; }
+  .mainChambre > .texte .choix {
+    display: flex;
+    align-items: center; }
+    .mainChambre > .texte .choix a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 25%;
+      height: 40px;
+      color: black;
+      border: 2px solid black;
+      box-sizing: border-box;
+      text-align: center;
+      border-right: 1px solid black;
+      text-decoration: none;
+      background-color: gray; }
+      .mainChambre > .texte .choix a:last-child {
+        border-right: 2px solid black; }
+
+.ssMenuChambre {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0; }
+
+.ssMenuChambre .ulChambre {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); }
+
+.ssMenuChambre .ulChambre .listeChambre {
+  display: inline-block; }
+
+.ssMenuChambre .ulChambre .listeChambre .aChambre {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block; }
+
+.ssMenuChambre .ulChambre .listeChambre .aChambre:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7); }
+
+.mainContact,
+.mainRecrutement {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainContact .containerForm,
+  .mainRecrutement .containerForm {
+    background-color: rgba(37, 37, 37, 0.9);
+    position: relative;
+    margin-top: 40px; }
+    .mainContact .containerForm form,
+    .mainRecrutement .containerForm form {
+      margin: 0 auto;
+      border: 1px solid white;
+      display: inline-block;
+      margin: 0 auto;
+      margin: 16px;
+      padding: 16px; }
+      .mainContact .containerForm form h2,
+      .mainRecrutement .containerForm form h2 {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 24px; }
+      .mainContact .containerForm form label,
+      .mainRecrutement .containerForm form label {
+        color: goldenrod;
+        font-style: italic;
+        display: inline-block;
+        margin-bottom: 16px;
+        text-align: center; }
+        .mainContact .containerForm form label i,
+        .mainRecrutement .containerForm form label i {
+          color: white; }
+      .mainContact .containerForm form input[type="text"],
+      .mainContact .containerForm form input[type="mail"],
+      .mainContact .containerForm form input[type="file"],
+      .mainRecrutement .containerForm form input[type="text"],
+      .mainRecrutement .containerForm form input[type="mail"],
+      .mainRecrutement .containerForm form input[type="file"] {
+        display: inline-block;
+        float: right;
+        width: 70vw;
+        max-width: 500px;
+        text-align: center;
+        background-color: inherit;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white; }
+        .mainContact .containerForm form input[type="text"]::placeholder,
+        .mainContact .containerForm form input[type="mail"]::placeholder,
+        .mainContact .containerForm form input[type="file"]::placeholder,
+        .mainRecrutement .containerForm form input[type="text"]::placeholder,
+        .mainRecrutement .containerForm form input[type="mail"]::placeholder,
+        .mainRecrutement .containerForm form input[type="file"]::placeholder {
+          color: white; }
+        @media screen and (max-width: 800px) {
+          .mainContact .containerForm form input[type="text"],
+          .mainContact .containerForm form input[type="mail"],
+          .mainContact .containerForm form input[type="file"],
+          .mainRecrutement .containerForm form input[type="text"],
+          .mainRecrutement .containerForm form input[type="mail"],
+          .mainRecrutement .containerForm form input[type="file"] {
+            width: 50vw; } }
+      .mainContact .containerForm form input[type="file"],
+      .mainRecrutement .containerForm form input[type="file"] {
+        width: 70vw;
+        border: none; }
+        @media screen and (max-width: 800px) {
+          .mainContact .containerForm form input[type="file"],
+          .mainRecrutement .containerForm form input[type="file"] {
+            width: 50vw; } }
+      .mainContact .containerForm form select#categorie,
+      .mainRecrutement .containerForm form select#categorie {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-decoration: none;
+        background-color: inherit;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+        display: inline-block;
+        margin-bottom: 24px;
+        margin: 0 auto; }
+        .mainContact .containerForm form select#categorie option,
+        .mainRecrutement .containerForm form select#categorie option {
+          color: black;
+          border: none;
+          background-color: inherit; }
+      .mainContact .containerForm form textarea#message,
+      .mainRecrutement .containerForm form textarea#message {
+        width: 100%;
+        height: 100px;
+        background-color: inherit;
+        margin-bottom: 40px; }
+        .mainContact .containerForm form textarea#message::placeholder,
+        .mainRecrutement .containerForm form textarea#message::placeholder {
+          text-align: center; }
+      .mainContact .containerForm form input[type=submit],
+      .mainRecrutement .containerForm form input[type=submit] {
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #00c9ff;
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+        border: none;
+        position: absolute;
+        bottom: 0px;
+        left: 0px; }
+        @media screen and (max-width: 640px) {
+          .mainContact .containerForm form input[type=submit],
+          .mainRecrutement .containerForm form input[type=submit] {
+            bottom: 0px; } }
+
+.mainAvis > h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 2em; }
+.mainAvis form {
+  background-color: #d0d0d0;
+  max-width: 960px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px; }
+  .mainAvis form h3 {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 1.5em; }
+  .mainAvis form .conteneurForm {
+    display: flex;
+    justify-content: space-around; }
+    .mainAvis form .conteneurForm .nomEtPrenom {
+      width: 30%; }
+      .mainAvis form .conteneurForm .nomEtPrenom label {
+        font-size: 1.5em; }
+      .mainAvis form .conteneurForm .nomEtPrenom input {
+        width: 100%;
+        height: 64px; }
+      .mainAvis form .conteneurForm .nomEtPrenom .formEtoile {
+        font-size: 1.5em; }
+    .mainAvis form .conteneurForm .formCommentaire {
+      width: 60%; }
+      .mainAvis form .conteneurForm .formCommentaire label {
+        font-size: 1.5em; }
+      .mainAvis form .conteneurForm .formCommentaire textarea {
+        width: 90%;
+        height: 120px; }
+    @media screen and (max-width: 800px) {
+      .mainAvis form .conteneurForm {
+        flex-direction: column;
+        align-items: center; }
+        .mainAvis form .conteneurForm .nomEtPrenom {
+          width: 80%;
+          text-align: center; }
+          .mainAvis form .conteneurForm .nomEtPrenom input {
+            height: 40px; }
+        .mainAvis form .conteneurForm .formCommentaire {
+          width: 80%;
+          margin-top: 40px;
+          text-align: center; } }
+  .mainAvis form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 160px;
+    height: 48px; }
+.mainAvis nav {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-color: #d0d0d0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; }
+  .mainAvis nav h3 {
+    width: 160px;
+    padding: 8px;
+    margin: 24px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    text-align: center; }
+    .mainAvis nav h3:hover {
+      background-color: darkgrey;
+      color: white;
+      font-weight: bold; }
+  @media screen and (max-width: 640px) {
+    .mainAvis nav {
+      flex-direction: column;
+      align-items: center; } }
+  .mainAvis nav h3.selectionee {
+    background-color: gray; }
+.mainAvis .zoneCommentaires {
+  width: 80%;
+  max-width: 960px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column; }
+  .mainAvis .zoneCommentaires .commentaire {
+    margin-top: 24px;
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    @media screen and (max-width: 800px) {
+      .mainAvis .zoneCommentaires .commentaire {
+        flex-direction: column; }
+        .mainAvis .zoneCommentaires .commentaire .iconeGuillemet {
+          display: none; } }
+    .mainAvis .zoneCommentaires .commentaire .iconeGuillemet {
+      font-size: 3em; }
+    .mainAvis .zoneCommentaires .commentaire .texteCommentaire {
+      width: 50%;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 8px; }
+    .mainAvis .zoneCommentaires .commentaire .etoiles {
+      padding: 0 8px; }
+    .mainAvis .zoneCommentaires .commentaire .date {
+      font-size: 1em; }
+    .mainAvis .zoneCommentaires .commentaire .nomCommentaire {
+      font-size: 1em; }
+
+.mainPresse h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 80px; }
+.mainPresse .imagesArticles {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px; }
+  .mainPresse .imagesArticles figure {
+    width: 15%; }
+    .mainPresse .imagesArticles figure a img {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px; }
+    .mainPresse .imagesArticles figure figcaption {
+      text-align: justify;
+      line-height: 24px; }
+    .mainPresse .imagesArticles figure .selectionEnCours {
+      box-shadow: -5px 5px 10px black; }
+  @media screen and (max-width: 800px) {
+    .mainPresse .imagesArticles {
+      flex-direction: column; }
+      .mainPresse .imagesArticles figure {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 40px; } }
+.mainPresse .articlePrincipal {
+  margin-top: 80px;
+  background-color: lightgray;
+  padding: 80px 0; }
+  .mainPresse .articlePrincipal figure {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainPresse .articlePrincipal figure img {
+      display: block;
+      max-width: 80%; }
+    .mainPresse .articlePrincipal figure figcaption {
+      margin-top: 40px;
+      display: inline-block; }
+
+.mainActualite {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 80px; }
+  .mainActualite h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px; }
+  .mainActualite .conteneurArticle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .mainActualite .conteneurArticle article {
+      width: 40%;
+      padding-top: 40px; }
+      .mainActualite .conteneurArticle article img {
+        width: 100%; }
+      .mainActualite .conteneurArticle article h3 {
+        font-size: 1.5em;
+        color: #3100ff;
+        padding-top: 8px;
+        font-family: 'Open Sans', sans-serif; }
+      .mainActualite .conteneurArticle article p {
+        padding: 16px 0;
+        text-align: justify;
+        font-family: 'Open Sans', sans-serif; }
+      .mainActualite .conteneurArticle article span {
+        float: right;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif; }
+        .mainActualite .conteneurArticle article span a {
+          text-decoration: none; }
+      @media screen and (max-width: 800px) {
+        .mainActualite .conteneurArticle article {
+          width: 80%; } }
+
+.mainEvenement .videoTopEvenement {
+  height: 320px;
+  overflow: hidden; }
+  .mainEvenement .videoTopEvenement .videoContainer video {
+    width: 100%; }
+.mainEvenement #videoInauguration,
+.mainEvenement #videoFeteDeLaMusique,
+.mainEvenement #videoHypnose {
+  margin-top: 120px;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray; }
+  @media screen and (max-width: 800px) {
+    .mainEvenement #videoInauguration,
+    .mainEvenement #videoFeteDeLaMusique,
+    .mainEvenement #videoHypnose {
+      flex-direction: column !important; }
+      .mainEvenement #videoInauguration .photo,
+      .mainEvenement #videoFeteDeLaMusique .photo,
+      .mainEvenement #videoHypnose .photo {
+        width: 80% !important;
+        margin-bottom: 0px !important; }
+      .mainEvenement #videoInauguration .texte,
+      .mainEvenement #videoFeteDeLaMusique .texte,
+      .mainEvenement #videoHypnose .texte {
+        margin-top: 0px !important;
+        width: 80% !important; } }
+  .mainEvenement #videoInauguration .photo,
+  .mainEvenement #videoFeteDeLaMusique .photo,
+  .mainEvenement #videoHypnose .photo {
+    width: 60%;
+    overflow: hidden; }
+    .mainEvenement #videoInauguration .photo .video-container,
+    .mainEvenement #videoFeteDeLaMusique .photo .video-container,
+    .mainEvenement #videoHypnose .photo .video-container {
+      height: inherit; }
+      .mainEvenement #videoInauguration .photo .video-container .fillWidth,
+      .mainEvenement #videoFeteDeLaMusique .photo .video-container .fillWidth,
+      .mainEvenement #videoHypnose .photo .video-container .fillWidth {
+        display: block;
+        height: 300px;
+        margin: 0 auto; }
+  .mainEvenement #videoInauguration .texte,
+  .mainEvenement #videoFeteDeLaMusique .texte,
+  .mainEvenement #videoHypnose .texte {
+    background-color: lightgrey;
+    width: 30%;
+    height: 300px;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column; }
+    .mainEvenement #videoInauguration .texte h3,
+    .mainEvenement #videoFeteDeLaMusique .texte h3,
+    .mainEvenement #videoHypnose .texte h3 {
+      padding: 0;
+      padding-top: 8px;
+      margin: none;
+      flex: none; }
+    .mainEvenement #videoInauguration .texte p,
+    .mainEvenement #videoFeteDeLaMusique .texte p,
+    .mainEvenement #videoHypnose .texte p {
+      text-align: justify;
+      display: inline;
+      flex: none; }
+    .mainEvenement #videoInauguration .texte span,
+    .mainEvenement #videoFeteDeLaMusique .texte span,
+    .mainEvenement #videoHypnose .texte span {
+      align-self: flex-end; }
+      .mainEvenement #videoInauguration .texte span a,
+      .mainEvenement #videoFeteDeLaMusique .texte span a,
+      .mainEvenement #videoHypnose .texte span a {
+        display: inline-block;
+        color: black; }
+
+#videoFeteDeLaMusique {
+  flex-direction: row-reverse; }
+
+.mainMentionsLegale,
+.mainCgv {
+  padding: 40px; }
+  .mainMentionsLegale h1,
+  .mainCgv h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 64px; }
+  .mainMentionsLegale h2,
+  .mainCgv h2 {
+    font-size: 2em;
+    color: #004eff;
+    margin-top: 16px;
+    font-family: 'Open Sans', sans-serif; }
+  .mainMentionsLegale p,
+  .mainCgv p {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify; }
+
+.mainPanier {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 152px; }
+  .mainPanier * {
+    border-collapse: collapse;
+    vertical-align: middle; }
+  .mainPanier h2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 1.5em; }
+  .mainPanier table {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-right: none; }
+    .mainPanier table td,
+    .mainPanier table th {
+      border: 1px solid black; }
+      .mainPanier table td i,
+      .mainPanier table th i {
+        padding-left: 8px;
+        borlor: black; }
+    .mainPanier table .retirer {
+      border: none; }
+    .mainPanier table .premiereLigne .dates {
+      display: flex;
+      justify-content: center;
+      min-width: 300px; }
+      .mainPanier table .premiereLigne .dates span {
+        padding: 8px; }
+      .mainPanier table .premiereLigne .dates span:nth-child(1),
+      .mainPanier table .premiereLigne .dates span:nth-child(2) {
+        border-right: 1px solid black; }
+    .mainPanier table .premiereLigne .datePetit {
+      display: none; }
+    .mainPanier table .premiereLigne .prix {
+      padding: 8px 32px; }
+    .mainPanier table .ligneChambre .article {
+      display: flex; }
+      .mainPanier table .ligneChambre .article .imageChambre {
+        width: 60%; }
+        .mainPanier table .ligneChambre .article .imageChambre img {
+          display: inline-block;
+          width: 100%;
+          padding: 8px; }
+      .mainPanier table .ligneChambre .article .texteArticle {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .mainPanier table .ligneChambre .article .texteArticle h3 {
+          font-size: 1.5em;
+          text-align: center; }
+        .mainPanier table .ligneChambre .article .texteArticle p {
+          text-align: center; }
+    .mainPanier table .ligneChambre .dates {
+      min-width: 300px;
+      justify-content: center; }
+      .mainPanier table .ligneChambre .dates span {
+        display: inline-block;
+        min-width: 97px;
+        width: 30%;
+        text-align: center; }
+        .mainPanier table .ligneChambre .dates span .preposition {
+          display: none; }
+    .mainPanier table .ligneChambre .prix span {
+      display: block;
+      text-align: center; }
+    .mainPanier table .derniereLigne td span {
+      float: right;
+      display: inline-block;
+      font-size: 1.5em;
+      padding: 40px 16px; }
+    @media screen and (max-width: 800px) {
+      .mainPanier table .ligneChambre .article .imageChambre {
+        display: none; }
+      .mainPanier table .ligneChambre .article .texteArticle {
+        width: 100%;
+        padding: 16px 8px; }
+      .mainPanier table .ligneChambre .dates {
+        text-align: center; } }
+    @media screen and (max-width: 640px) {
+      .mainPanier table .premiereLigne .dates {
+        min-width: 0; }
+        .mainPanier table .premiereLigne .dates span {
+          width: 100px; }
+        .mainPanier table .premiereLigne .dates .datePetit {
+          display: inline-block; }
+        .mainPanier table .premiereLigne .dates .dateGrand {
+          display: none; }
+      .mainPanier table .ligneChambre .dates {
+        min-width: 0; }
+        .mainPanier table .ligneChambre .dates span {
+          display: block;
+          margin: 0 auto; }
+          .mainPanier table .ligneChambre .dates span .preposition {
+            display: inline-block;
+            margin-top: 8px; }
+        .mainPanier table .ligneChambre .dates .nbNuit {
+          display: none; } }
+
+.mainPanier {
+  max-width: 960px;
+  width: 80%; }
+  .mainPanier form {
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: 80px; }
+    .mainPanier form .checkbox {
+      display: flex;
+      width: 70%; }
+      .mainPanier form .checkbox input {
+        width: 10%; }
+    .mainPanier form input {
+      display: inline-block;
+      width: 20%; }
+
+.drapeauFrancais,
+.drapeauAnglais {
+  width: 120px;
+  height: 32px;
+  position: fixed;
+  top: 80px;
+  left: -40px;
+  z-index: 100;
+  background-color: grey;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px; }
+  .drapeauFrancais figure,
+  .drapeauAnglais figure {
+    float: right;
+    margin-right: 16px; }
+    .drapeauFrancais figure img,
+    .drapeauAnglais figure img {
+      display: block;
+      width: 24px;
+      margin-top: 4px; }
+
+.drapeauAnglais {
+  left: -240px; }
+
+.mainPlanDuSite {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 80px; }
+  .mainPlanDuSite h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 80px; }
+  .mainPlanDuSite > ul {
+    display: inline-block;
+    margin: 0 auto; }
+    .mainPlanDuSite > ul > li {
+      font-size: 2em;
+      padding: 4px 0;
+      list-style-type: circle; }
+      .mainPlanDuSite > ul > li ul {
+        margin-left: 40px; }
+        .mainPlanDuSite > ul > li ul li {
+          padding: 4px 0; }
+
+.ssMenuSpa {
+  max-width: 100%;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0; }
+
+.ssMenuSpa .ulSpa {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); }
+
+.ssMenuSpa .ulSpa .listeSpa {
+  display: inline-block; }
+
+.ssMenuSpa .ulSpa .listeSpa .aSpa {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block; }
+
+.ssMenuSpa .ulSpa .listeSpa .aSpa:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7); }
+
+.topSpa {
+  width: 80%;
+  font-size: 20px;
+  margin-left: 8%; }
+
+.topSpa h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center; }
+
+.topSpa h4 {
+  font-size: 25px;
+  margin-left: 100px; }
+
+/************SLIDER CARROUSEl****************/
+.txtCarouselSpa {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  line-height: 30px; }
+
+.txtCarousSpa {
+  width: 40%;
+  font-size: 14px; }
+
+.listeCarrouSpa {
+  width: 40%;
+  font-size: 15px; }
+
+.installationSpa li {
+  list-style-type: disc; }
+
+.titreSoin {
+  font-size: 35px;
+  margin-left: 8%; }
+
+.separationSoin {
+  width: 80%;
+  margin-left: 8%;
+  height: 1px;
+  background-color: none;
+  background-color: black; }
+
+.soinSpa {
+  width: 80%;
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.soinSpa2 {
+  width: 80%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.txtSoinSpa1 {
+  width: 40%;
+  padding: 2%; }
+
+.txtSoinSpa1 h3 {
+  font-size: 35px;
+  margin-top: 60px; }
+
+.txtSoinSpa1 p {
+  font-size: 18px;
+  line-height: 30px; }
+
+.separationSoin2 {
+  width: 80%;
+  margin-left: 8%; }
+
+.remiseEnForme {
+  width: 80%;
+  margin-left: 12%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.txtRemiseEnForme {
+  width: 40%;
+  /* background-color: rgba(216, 216, 216, 0.5); */
+  background-color: white;
+  height: 300px;
+  padding: 2%;
+  margin-top: 70px;
+  margin-right: -70px;
+  z-index: 9;
+  line-height: 25px; }
+
+.txtRemiseEnForme h2 {
+  text-align: center;
+  font-style: italic; }
+
+.photoRemiseEnForme {
+  width: 60%; }
+
+@media screen and (max-width: 1200px) {
+  .carousel-caption {
+    display: none; }
+
+  .carousel-indicators {
+    display: none; }
+
+  .txtSoinSpa1 {
+    width: 100%; } }
+@media screen and (max-width: 768px) {
+  .txtCarouselSpa {
+    display: block; }
+
+  .txtCarousSpa {
+    width: 100%;
+    line-height: 25px;
+    font-size: 12px; }
+
+  .txtCarousSpa,
+  p {
+    width: 10;
+    margin: 0 0 0 -45px; }
+
+  .topSpa > h4 {
+    font-size: 19px;
+    margin-left: 30px; }
+
+  .topSpa > p {
+    font-size: 15px; }
+
+  .installationSpa > h2 {
+    font-size: 30px; }
+
+  .listeCarrouSpa {
+    width: 100%;
+    font-size: 12px;
+    margin: 0 0 0 -45px; }
+
+  .txtSoinSpa1 {
+    width: 100%; }
+
+  .txtSoinSpa1 p {
+    font-size: 12px;
+    line-height: 25px; }
+
+  .photoRemiseEnForme {
+    width: 100%; }
+
+  .txtRemiseEnForme {
+    width: 100%;
+    margin-left: -20px; }
+
+  .photoRemiseEnForme {
+    margin-left: -50px; } }
+@media screen and (max-width: 600px) {
+  .remiseEnForme {
+    display: none; } }
+@media screen and (max-width: 414px) {
+  .txtCarouselSpa {
+    display: block; }
+
+  .txtCarousSpa {
+    width: 100%;
+    line-height: 25px;
+    font-size: 12px; }
+
+  .txtCarousSpa,
+  p {
+    width: 10;
+    margin: 0 0 0 -45px; }
+
+  .topSpa > h4 {
+    font-size: 19px;
+    margin-left: 30px; }
+
+  .topSpa > p {
+    font-size: 15px; }
+
+  .installationSpa > h2 {
+    font-size: 30px; }
+
+  .listeCarrouSpa {
+    width: 100%;
+    font-size: 12px;
+    margin: 0 0 0 -45px; }
+
+  .txtSoinSpa1 {
+    width: 100%; }
+
+  .txtSoinSpa1 p {
+    font-size: 12px;
+    line-height: 25px; }
+
+  .txtRemiseEnForm > p {
+    display: none; }
+
+  .txtRemiseEnForme {
+    display: none; }
+
+  .remiseEnForme {
+    display: none; }
+
+  .photoRemiseEnForme {
+    display: block;
+    width: 80%; } }
+@media screen and (max-width: 375px) {
+  .txtCarouselSpa {
+    display: block; }
+
+  .txtCarousSpa {
+    width: 100%;
+    line-height: 25px;
+    font-size: 12px; }
+
+  .txtCarousSpa {
+    width: 100;
+    margin: 0 0 0 -45px; }
+
+  .topSpa > h4 {
+    font-size: 19px;
+    margin-left: 30px; }
+
+  .topSpa > p {
+    font-size: 12px;
+    line-height: 25px; }
+
+  .installationSpa > h2 {
+    font-size: 30px; }
+
+  .listeCarrouSpa {
+    width: 100%;
+    font-size: 12px; }
+
+  .txtSoinSpa1 {
+    width: 100%; }
+
+  .txtSoinSpa1 p {
+    font-size: 12px;
+    line-height: 25px; } }
+.mainRestaurant {
+  /*********D├®but SLidde**********/
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /**********Fin SLidde**********/
+  /*****************D├®but Pres Cuisine*********************/
+  /*****************************************************/
+  /*****************Fin Pres Cuisine*********************/
+  /*****************************************************/
+  /**************************Menu***********************/
+  /**************************Fin Menu***********************/ }
+  .mainRestaurant .navResto {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .mainRestaurant .navResto li {
+    list-style-type: none; }
+  .mainRestaurant .navResto a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px; }
+  .mainRestaurant .navResto a:hover {
+    opacity: 0.8;
+    color: tomato; }
+  .mainRestaurant .navigation {
+    justify-content: center; }
+  .mainRestaurant .txtHeader {
+    width: 53%;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 4%; }
+  .mainRestaurant .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto; }
+  .mainRestaurant .mySlides {
+    display: none; }
+  .mainRestaurant .prev,
+  .mainRestaurant .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+  .mainRestaurant .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .mainRestaurant .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center; }
+  .mainRestaurant .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; }
+  .mainRestaurant .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .mainRestaurant .active,
+  .mainRestaurant .dot:hover {
+    background-color: #717171; }
+  .mainRestaurant .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+  .mainRestaurant .parallax {
+    background-image: url("../images/pageRestaurant/img5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    opacity: 0.5; }
+  .mainRestaurant #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px; }
+  .mainRestaurant #myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */ }
+  .mainRestaurant .Cuisine {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: row-reverse; }
+  .mainRestaurant .titreCuisine {
+    display: block;
+    justify-content: center; }
+  .mainRestaurant .txtCuisine {
+    width: 20%;
+    display: inline-block;
+    justify-content: center;
+    line-height: 30px;
+    margin: 5% auto; }
+  .mainRestaurant .txtCuisine > h3 {
+    text-decoration: none;
+    display: block;
+    text-align: center; }
+  .mainRestaurant .txtCuisine h3 {
+    font-size: 30px;
+    text-decoration: underline; }
+  .mainRestaurant .containerCarteResto {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    padding: 1%;
+    text-align: center;
+    line-height: 30px;
+    justify-content: space-around;
+    background-image: url("../images/pageRestaurant/imgMenu.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; }
+  .mainRestaurant .Menu_midi {
+    line-height: 31px; }
+  .mainRestaurant .containerCarteResto h2 {
+    font-size: 35px; }
+  .mainRestaurant .containerCarteResto h2:hover {
+    color: tomato; }
+  .mainRestaurant .containerBrasserie {
+    width: 500px;
+    text-align: center; }
+  .mainRestaurant .containerBrasserie .Menu_midi h4,
+  .mainRestaurant h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: tomato; }
+  .mainRestaurant .containerD├®gustation {
+    width: 500px;
+    text-align: center;
+    line-height: 40px; }
+  .mainRestaurant .containerD├®gustation .menuD├®gustation,
+  .mainRestaurant h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: tomato; }
+  .mainRestaurant .containerRestaurantSoir {
+    width: 500px;
+    text-align: center; }
+  .mainRestaurant .containerD├®gustation,
+  .mainRestaurant .containerBrasserie,
+  .mainRestaurant .containerRestaurantSoir {
+    font-size: 19px; }
+  .mainRestaurant .containerTxt {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFE9DA; }
+  .mainRestaurant .txtSliderVin {
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 40px; }
+  .mainRestaurant .txtSliderBieres {
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 40px;
+    margin-top: 110px; }
+  .mainRestaurant h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    display: inline-block;
+    text-align: center; }
+  .mainRestaurant h3 {
+    font-size: 22px;
+    text-decoration: underline; }
+  .mainRestaurant .txtSliderVin,
+  .mainRestaurant .txtSliderBieres p {
+    font-size: 18px;
+    font-family: 'Crimson Text', serif; }
+
+/*# sourceMappingURL=style.css.map */
